@@ -46,6 +46,7 @@ target_link_libraries(reef PRIVATE
 install(TARGETS reef CONFIGURATIONS Release RUNTIME DESTINATION bin)
 install(FILES ${CMAKE_SOURCE_DIR}/data/ca.amorim.reef.desktop DESTINATION share/applications)
 install(FILES ${CMAKE_SOURCE_DIR}/data/ca.amorim.reef.appdata.xml DESTINATION share/metainfo)
+install(FILES reef.png DESTINATION share/icons)
 
 # Disable the console on Windows
 if(WIN32)
